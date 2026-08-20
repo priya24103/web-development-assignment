@@ -1,0 +1,12 @@
+# robots.txt for Pageturner Books
+# IT645 Lab Assignment 2
+
+User-agent: *
+Allow: /
+
+# Disallow administrative and test directories
+Disallow: /admin/
+Disallow: /test/
+
+# Sitemap Location
+Sitemap: sitemap.xml

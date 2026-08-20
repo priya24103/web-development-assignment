@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Catalog & Menu | Pageturner Books</title>
+  <meta name="description" content="Explore our extensive book store menu and catalog featuring top fiction, non-fiction, sci-fi, drama, comedy, and horror titles available at Pageturner Books.">
+  <meta name="keywords" content="book store menu, book catalog, pageturner books, buy fiction books, sci-fi novels, drama books">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; background: #faf7f2; color: #2b2320; line-height: 1.6; }
+
+    header {
+      background: #2b2320;
+      color: #faf7f2;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    header h1 { font-size: 1.8rem; letter-spacing: 1px; }
+    header h1 a { color: #faf7f2; text-decoration: none; }
+    nav { display: flex; flex-wrap: wrap; gap: 20px; }
+    nav a {
+      color: #faf7f2;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+    nav a:hover, nav a.active { color: #d4a373; text-decoration: underline; }
+
+    .hero {
+      background: #7a5c3e;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .hero h2 { font-size: 2.2rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.1rem; opacity: 0.95; }
+
+    main { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+    .category-section {
+      margin-bottom: 45px;
+      scroll-margin-top: 20px;
+    }
+    .category-section h2 {
+      font-size: 1.6rem;
+      border-bottom: 2px solid #7a5c3e;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      color: #2b2320;
+    }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .catalog-card {
+      background: #fff;
+      border: 1px solid #e0d8cc;
+      border-radius: 6px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: box-shadow 0.2s ease;
+    }
+    .catalog-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .catalog-card h3 { font-size: 1.2rem; margin-bottom: 5px; color: #2b2320; }
+    .catalog-card .author { font-style: italic; color: #7a5c3e; font-size: 0.9rem; margin-bottom: 10px; }
+    .catalog-card .price { font-weight: bold; color: #2b2320; font-size: 1.1rem; margin-bottom: 10px; }
+    .catalog-card p { color: #6b5f52; font-size: 0.9rem; line-height: 1.5; margin-bottom: 15px; }
+
+    .btn {
+      background: #7a5c3e;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+    }
+    .btn:hover { background: #5f4630; }
+
+    footer {
+      background: #2b2320;
+      color: #faf7f2;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+    footer nav { justify-content: center; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><a href="index.html">📚 Pageturner Books</a></h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu & Catalog</a>
+    <a href="performance.html">Performance Gallery</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="sitemap.html">Sitemap</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Bookstore Menu & Featured Catalog</h2>
+  <p>Explore curated selections across popular genres available for purchase at Pageturner Books.</p>
+</section>
+
+<main>
+
+  <section id="scifi" class="category-section">
+    <h2>🚀 Science Fiction & Fantasy</h2>
+    <div class="catalog-grid">
+      <article class="catalog-card">
+        <div>
+          <h3>Starlight Odyssey</h3>
+          <p class="author">by Arthur C. Pendelton</p>
+          <div class="price">$18.99</div>
+          <p>A gripping voyage into deep space exploring galactic empires and AI consciousness.</p>
+        </div>
+        <a href="contact.html?reserve=starlight" class="btn">Reserve Copy</a>
+      </article>
+
+      <article class="catalog-card">
+        <div>
+          <h3>Chronicles of the Quantum Realm</h3>
+          <p class="author">by Elena Rostova</p>
+          <div class="price">$16.50</div>
+          <p>Parallel timelines collide when a rogue physicist invents a dimension-shifting key.</p>
+        </div>
+        <a href="contact.html?reserve=quantum" class="btn">Reserve Copy</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="comedy" class="category-section">
+    <h2>😂 Comedy & Humorous Fiction</h2>
+    <div class="catalog-grid">
+      <article class="catalog-card">
+        <div>
+          <h3>The Accidental Millionaire</h3>
+          <p class="author">by Barnaby Higgins</p>
+          <div class="price">$14.99</div>
+          <p>A hilarious tale of mix-ups, quirky mistaken identity, and unexpected fortune.</p>
+        </div>
+        <a href="contact.html?reserve=millionaire" class="btn">Reserve Copy</a>
+      </article>
+
+      <article class="catalog-card">
+        <div>
+          <h3>Coffee Shop Confessions</h3>
+          <p class="author">by Clara Vance</p>
+          <div class="price">$13.75</div>
+          <p>Witty observations and laugh-out-loud anecdotes from an eccentric barista.</p>
+        </div>
+        <a href="contact.html?reserve=coffeeshop" class="btn">Reserve Copy</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="drama" class="category-section">
+    <h2>🎭 Drama & Historical Fiction</h2>
+    <div class="catalog-grid">
+      <article class="catalog-card">
+        <div>
+          <h3>Echoes of the River Valley</h3>
+          <p class="author">by Margaret Thornton</p>
+          <div class="price">$19.50</div>
+          <p>A multi-generational saga of hope, heartbreak, and resilience in 19th century Europe.</p>
+        </div>
+        <a href="contact.html?reserve=echoes" class="btn">Reserve Copy</a>
+      </article>
+
+      <article class="catalog-card">
+        <div>
+          <h3>The Silent Symphony</h3>
+          <p class="author">by Julian Mercer</p>
+          <div class="price">$17.00</div>
+          <p>An emotional drama tracing a prodigy musician's journey through love and adversity.</p>
+        </div>
+        <a href="contact.html?reserve=symphony" class="btn">Reserve Copy</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="action" class="category-section">
+    <h2>💥 Action & Thrillers</h2>
+    <div class="catalog-grid">
+      <article class="catalog-card">
+        <div>
+          <h3>Cipher of Vengeance</h3>
+          <p class="author">by Marcus Steel</p>
+          <div class="price">$15.99</div>
+          <p>High-stakes international espionage thriller with non-stop adrenaline and betrayal.</p>
+        </div>
+        <a href="contact.html?reserve=cipher" class="btn">Reserve Copy</a>
+      </article>
+
+      <article class="catalog-card">
+        <div>
+          <h3>Midnight Protocol</h3>
+          <p class="author">by Samantha Cross</p>
+          <div class="price">$16.99</div>
+          <p>A rogue operative races against time to decrypt a global conspiracy code.</p>
+        </div>
+        <a href="contact.html?reserve=protocol" class="btn">Reserve Copy</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="horror" class="category-section">
+    <h2>👻 Horror & Mystery</h2>
+    <div class="catalog-grid">
+      <article class="catalog-card">
+        <div>
+          <h3>Whispers in Blackwood Manor</h3>
+          <p class="author">by Evelyn Gray</p>
+          <div class="price">$14.50</div>
+          <p>Chilling haunted estate mystery where ancient family secrets refuse to stay buried.</p>
+        </div>
+        <a href="contact.html?reserve=blackwood" class="btn">Reserve Copy</a>
+      </article>
+
+      <article class="catalog-card">
+        <div>
+          <h3>The Shadows Beneath</h3>
+          <p class="author">by Victor Vance</p>
+          <div class="price">$15.25</div>
+          <p>Eerie psychological horror in a quiet coastal town shrouded in perpetual fog.</p>
+        </div>
+        <a href="contact.html?reserve=shadows" class="btn">Reserve Copy</a>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Pageturner Books Store. All rights reserved.</p>
+  <nav aria-label="Footer Navigation">
+    <a href="index.html">Home</a> |
+    <a href="menu.html">Menu</a> |
+    <a href="performance.html">Performance</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="sitemap.html">HTML Sitemap</a> |
+    <a href="sitemap.xml">XML Sitemap</a>
+  </nav>
+</footer>
+
+</body>
+</html>
