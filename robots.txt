@@ -9,4 +9,4 @@ Disallow: /admin/
 Disallow: /test/
 
 # Sitemap Location
-Sitemap: sitemap.xml
+Sitemap: https://priya24103.github.io/web-development-assignment/sitemap.xml
